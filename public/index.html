@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FastDL - Fast Download Manager</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: Arial, sans-serif; background: #f5f5f5; color: #333; }
+    header { background: #1a73e8; color: white; padding: 16px 32px; display: flex; align-items: center; gap: 12px; }
+    header h1 { font-size: 1.4rem; }
+    .container { max-width: 900px; margin: 40px auto; padding: 0 20px; }
+    .search-bar { display: flex; gap: 10px; margin-bottom: 30px; }
+    .search-bar input { flex: 1; padding: 12px; border: 1px solid #ddd; border-radius: 6px; font-size: 1rem; }
+    .search-bar button { padding: 12px 24px; background: #1a73e8; color: white; border: none; border-radius: 6px; cursor: pointer; }
+    .card { background: white; border-radius: 8px; padding: 20px; margin-bottom: 16px; display: flex; justify-content: space-between; align-items: center; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+    .card h3 { font-size: 1rem; margin-bottom: 4px; }
+    .card p { font-size: 0.85rem; color: #888; }
+    .btn { padding: 8px 20px; background: #1a73e8; color: white; border: none; border-radius: 4px; cursor: pointer; font-size: 0.9rem; }
+    .btn:hover { background: #1558b0; }
+    .stats { display: flex; gap: 24px; margin-bottom: 30px; }
+    .stat { background: white; flex: 1; padding: 16px; border-radius: 8px; text-align: center; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+    .stat h2 { color: #1a73e8; font-size: 1.6rem; }
+    .stat p { font-size: 0.85rem; color: #888; }
+  </style>
+</head>
+<body>
+  <header>
+    <svg width="28" height="28" viewBox="0 0 24 24" fill="white"><path d="M19 9h-4V3H9v6H5l7 7 7-7zm-8 2V5h2v6h1.17L12 13.17 9.83 11H11zm-6 7h14v2H5z"/></svg>
+    <h1>FastDL</h1>
+  </header>
+  <div class="container">
+    <div class="stats">
+      <div class="stat"><h2>2.4M</h2><p>Files Downloaded</p></div>
+      <div class="stat"><h2>180+</h2><p>Countries</p></div>
+      <div class="stat"><h2>99.9%</h2><p>Uptime</p></div>
+    </div>
+    <div class="search-bar">
+      <input type="text" placeholder="Paste a download link...">
+      <button>Download</button>
+    </div>
+    <div class="card">
+      <div><h3>Ubuntu 24.04 LTS Desktop</h3><p>ISO Image • 5.2 GB • ubuntu.com</p></div>
+      <button class="btn">Download</button>
+    </div>
+    <div class="card">
+      <div><h3>VLC Media Player 3.0.21</h3><p>Windows Installer • 42 MB • videolan.org</p></div>
+      <button class="btn">Download</button>
+    </div>
+    <div class="card">
+      <div><h3>Firefox 125.0 Setup</h3><p>Windows Installer • 58 MB • mozilla.org</p></div>
+      <button class="btn">Download</button>
+    </div>
+    <div class="card">
+      <div><h3>Blender 4.1.0</h3><p>Windows Installer • 380 MB • blender.org</p></div>
+      <button class="btn">Download</button>
+    </div>
+    <div class="card">
+      <div><h3>LibreOffice 24.2.3</h3><p>Windows Installer • 290 MB • libreoffice.org</p></div>
+      <button class="btn">Download</button>
+    </div>
+  </div>
+</body>
+</html>
